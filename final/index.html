@@ -5,17 +5,17 @@
 </head>
 
 <body>
-  <form>
-    <label>Some form</label>
-    <input type="text" name="firstname" placeholder="First Name">
-    <input type="text" name="surname" placeholder="Surname">
-    <input type="submit" value="Submit">
+  <form class="userForm">
+    <label class="userForm-descriptor">Some form</label>
+    <input class="userForm-firstNameEntry" type="text" name="firstname" placeholder="First Name">
+    <input class="userForm-surnameEntry" type="text" name="surname" placeholder="Surname">
+    <input class="userForm-submitButton" type="submit" value="Submit">
   </form>
-  <div>
-    <h2>Some content area</h2>
-    <div>
-      <h4>Lorem Ipsum</h4>
-      <span>
+  <div class="contentArea">
+    <h2 class="contentArea-title">Some content area</h2>
+    <div class="paragraphArea">
+      <h4 class="paragraphArea-title">Lorem Ipsum</h4>
+      <span class="paragraphArea-body">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -25,9 +25,9 @@
         mollit anim id est laborum.
       </span>
     </div>
-    <div>
-      <h4>Perspiciatis Omnis</h4>
-      <span>
+    <div class="paragraphArea">
+      <h4 class="paragraphArea-title">Perspiciatis Omnis</h4>
+      <span class="paragraphArea-body">
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
         accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
         ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
@@ -44,11 +44,12 @@
       </span>
     </div>
   </div>
-  <form>
-    <label>Another form</label>
-    <input type="text" name="Year" placeholder="Car Year">
-    <input type="text" name="model" placeholder="Car Model">
-    <input type="submit" value="Submit">
+  <form class="carForm">
+    <label class="carForm-descriptor">Another form</label>
+    <input class="carForm-yearEntry" type="text" name="Year" placeholder="Car Year">
+    <input class="carForm-modelEntry" type="text" name="model" placeholder="Car Model">
+    <div class="carForm-modelValidationMessage">Bad! Your input is bad!</div>
+    <input class="carForm-submitButton" type="submit" value="Submit">
   </form>
 </body>
 
